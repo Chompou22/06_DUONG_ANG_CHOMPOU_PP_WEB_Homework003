@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  box-sizing: border-box;
+}
+
+.profile {
+  width: 24px;
+  height: 24px;
+}
+
+.number {
+  width: 24px;
+  height: 24px;
+}
+
+.pic1 {
+  width: auto;
+  height: 120px;
+  border-radius: 16px;
+}
+
+.pic-relative {
+  display: flex;
+  justify-content: start;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.pic-absolute {
+  position: absolute;
+  width: 50px;
+  height: 73px;
+  border-radius: 8px;
+}
+
+.pic-absolute:nth-child(1) {
+  transform: translateX(100%);
+  z-index: 3;
+}
+
+.pic-absolute:nth-child(2) {
+  transform: translateX(50%);
+  z-index: 2;
+}
+
+.pic-absolute:nth-child(3) {
+  transform: translateX(10%);
+  z-index: 1;
+}
+
+.play-icon {
+  width: 24px;
+  height: 24px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 50%;
+}
+
+.explore-more {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 16px 32px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.nav-contents,
+li {
+  display: flex;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.btn-contact {
+  background-color: white;
+  border-radius: 16px;
+  padding: 8px 16px;
+  border: 1px solid;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.btn-contact:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0, 0, 0, 0.19);
+  transform: translateY(-2px);
+}
+
+.btn {
+  background-color: rgb(40, 108, 131);
+  border-radius: 16px;
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.24), 0 17px 50px rgba(0, 0, 0, 0.19);
+  transform: translateY(-2px);
+  background-color: white;
+  color: black;
+}
+
+.first-container-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 32px;
+}
+
+#absolute:nth-child(1) {
+  top: 5%;
+  transform: translateX(-100%);
+}
+
+#absolute:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#absolute:nth-child(3) {
+  bottom: 5%;
+  transform: translateX(-100%);
+}
+
+.second-container-content {
+  display: flex;
+  width: 50%;
+  gap: 24px;
+}
+
+.second-container-class {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-content:nth-child(1) {
+  margin-top: -20px;
+}
+
+.second-content:nth-child(2) {
+  margin-top: 40px;
+}
+
+.second-content:nth-child(3) {
+  margin-top: -20px;
+}
+
+.second-content #img1-relative {
+  padding: 16px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second-content:hover #img1-relative {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first-content {
+  padding: 16px;
+  width: 250px;
+  height: 150px;
+  border-radius: 16px;
+  background-color: white;
+}
+
+.first-content div {
+  margin-bottom: 8px;
+}
+
+.first-content-second-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  margin: 48px 48px 48px 48px;
+  justify-content: space-between;
+}
+
+.article-1 h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.article-2 h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.paragraph-1 p {
+  margin-bottom: 24px;
+}
+
+.article-1 h1::first-letter {
+  color: aqua;
+  font-size: 75px;
+}
+
+.article-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.ul-container,
+hide-ul-contianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide-ul-container {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.ul-style {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.ul-style li {
+  writing-mode: sideways-lr;
+  margin: 16px;
+}
+
+.container-content {
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+  background-color: whitesmoke;
+  padding: 32px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+a:link {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:visited {
+  color: #800080;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4500;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #32cd32;
+  text-decoration: none;
+}
+
+div[id="img-absolute"],
+div[id="absolute"] {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  width: 200px;
+  height: 75px;
+  border-radius: 16px;
+  background-color: white;
+  opacity: 60%;
+}
+
+div[id="img-relative"] {
+  position: relative;
+  border-radius: 16px;
+  background-image: url("./images/pic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 250px;
+  height: 275px;
+}
+#img-relative:hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.349) 1%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("./images/pic1.jpg");
+}
+
+div[id="img1-absolute"] {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 16px;
+  width: 200px;
+  height: auto;
+  border-radius: 16px;
+  background-color: white;
+  opacity: 60%;
+}
+
+div[id="img1-relative"] {
+  position: relative;
+  border-radius: 16px;
+  background-image: url("./images/pic1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 175px;
+  height: 275px;
+}
+#img1-relative:hover {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.349) 1%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("./images/pic1.jpg");
+}
